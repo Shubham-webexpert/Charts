@@ -33,7 +33,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Chart.js Line Chart',
+      text: 'Area Chart',
     },
   },
 };
@@ -60,7 +60,7 @@ const AreaChart = () => {
   return (
     <div className='areachart'>
         <h1>Area Chart</h1>
-        <Line options={options} data={data} />;
+        <Line options={options} data={data} />
     </div>
   )
 }
