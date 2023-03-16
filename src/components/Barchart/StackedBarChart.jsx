@@ -22,20 +22,19 @@ ChartJS.register(
 );
 
 export const options = {
-  indexAxis: "y",
-  elements: {
-    bar: {
-      borderWidth: 2,
+  plugins: {
+    title: {
+      display: true,
+      text: "Stacked Bar Chart - Stacked",
     },
   },
   responsive: true,
-  plugins: {
-    legend: {
-      position: "right",
+  scales: {
+    x: {
+      stacked: true,
     },
-    title: {
-      display: true,
-      text: " Horizontal Bar Chart",
+    y: {
+      stacked: true,
     },
   },
 };
@@ -48,25 +47,28 @@ export const data = {
     {
       label: "Dataset 1",
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      borderColor: "rgb(255, 99, 132)",
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
+      backgroundColor: "rgb(255, 99, 132)",
     },
     {
       label: "Dataset 2",
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      borderColor: "rgb(53, 162, 235)",
-      backgroundColor: "rgba(53, 162, 235, 0.5)",
+      backgroundColor: "rgb(75, 192, 192)",
+    },
+    {
+      label: "Dataset 3",
+      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+      backgroundColor: "rgb(53, 162, 235)",
     },
   ],
 };
 
-const HorizontalBarChart = () => {
+const StackedBarChart = () => {
   return (
-    <div className="horizontal">
-    <h2>2.Horizontal BarChart</h2>
+    <div className="stacked">
+    <h2>3.Stacked Bar Chart</h2>
       <Bar options={options} data={data} />
     </div>
   );
 };
 
-export default HorizontalBarChart;
+export default StackedBarChart;

@@ -1,4 +1,5 @@
 import React from "react";
+import "./barchart.css";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -28,7 +29,7 @@ export const options = {
       },
       title: {
         display: true,
-        text: 'Chart.js Bar Chart',
+        text: 'Vertical Bar Chart ',
       },
     },
   };
@@ -55,7 +56,7 @@ export const data = {
 const VerticalBarchart = () => {
   return (
     <>
-      <div>
+      <div className="verticle">
         <h2>1.Vertical BarChart</h2>
         <Bar options={options} data={data} />
       </div>
