@@ -1,9 +1,8 @@
-.piechart{
+.radar{
+    width:89%;
     text-align: center;
     align-items: center;
-    border:1px solid black;
     margin-top: 25px;
-    width: 89%; 
     padding: 15px;
+    border: 1px solid black;
 }
-

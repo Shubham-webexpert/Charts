@@ -1,0 +1,8 @@
+.bubble{
+    width: 89%;
+    margin-top: 25px;
+    padding: 15px;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+}

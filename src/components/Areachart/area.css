@@ -1,7 +1,45 @@
-.areachart{
-    text-align: center;
-    align-items: center;
-    border: 1px solid black;
-    margin-top: 50px;
-    width: 90%;
+
+
+
+
+@media screen and (min-width:780px){
+    .areachart{
+        text-align: center;
+        align-items: center;
+        border: 1px solid black;
+        margin-top: 50px;
+        width: 90%;
+    }
+      
+    .text{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:780px){
+    .areachart{
+        text-align: center;
+        align-items: center;
+        border: 1px solid black;
+        margin-top: 50px;
+        width: 95%;
+    }
+    
+    .text{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px){
+    .areachart{
+        text-align: center;
+        align-items: center;
+        border: 1px solid black;
+        margin-top: 50px;
+        width: 95%;
+    }
+
+    .text{
+        text-align: center;
+    }
 }

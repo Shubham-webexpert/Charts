@@ -1,7 +1,7 @@
 import React from "react";
-import "./piechart.css";
+import "./doughnutchart.css";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { Pie } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -32,13 +32,13 @@ export const data = {
   ],
 };
 
-const PieChart = () => {
+const DoughnutChart = () => {
   return (
-    <div className="piechart">
-      <h1>Pie Chart</h1>
-      <Pie data={data} className="pie"/>
+    <div className="doughnut">
+        <h1>Doughnut Chart</h1>
+      <Doughnut data={data} />
     </div>
   );
 };
 
-export default PieChart;
+export default DoughnutChart;

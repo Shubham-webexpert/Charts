@@ -28,8 +28,9 @@
         grid-template-columns:auto;
         align-items: center;
     }
-    .stacked,.verticle,.grouped,.horizontal{
+    .line,.next{
        width: 100%;
+       border: 1px solid black;
     }
 }
 
@@ -40,7 +41,11 @@
         grid-template-columns:auto;
         align-items: center;
     }
-    .stacked,.verticle,.grouped,.horizontal{
-       width: 100%;
+    .line,.next{
+       width: 95%;
+       text-align: center;
+       margin-top: 20px;
+       border: 1px solid black;
+
     }
 }

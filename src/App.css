@@ -1,1 +1,19 @@
 
+@media screen and (min-width:780px){
+    .App{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        align-items: center;
+    
+    }   
+}
+@media screen and (min-width:480px) and (max-width:780px){
+    .App{
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+        align-items: center;
+    
+    }   
+}
